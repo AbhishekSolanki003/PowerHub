@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Get_Lean: PowerHub: Ultimate Fitness Destination</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="PowerHub: Ultimate Fitness Destination" name="keywords">
+        <meta content="PowerHub: Ultimate Fitness Destination" name="description">
+    
+    <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="img/favicontry.PNG" >
+    
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
+    
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+       
+        <style>
+            :root {
+    --primary: #FB5B21;
+    --secondary: #BDBDBF;
+    --light: #F4F5F8;
+    --dark: #222429;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+    font-size: inherit;
+    margin-left: 0;
+}
+
+h1,
+h2,
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+img{
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* main body start */
+
+
+.list-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+    
+
+}
+
+.vid-list .thumbnail{
+    width: 100%;
+    border-radius: 5%;
+   
+
+}
+
+.vid-list .flex-div{
+    align-items: flex-start;
+    margin-top: 7px;
+}
+
+.vid-list .flex-div img{
+    width: 66px;
+    margin-right: 10px;
+    border-radius: 50%;
+    float: left;
+    
+}
+
+.vid-info{
+    color: #5a5a5a;
+    font-size: 13px;
+    float: left;
+}
+
+.vid-info a{
+    color: #0b1112;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 3px;
+    font-size: 20px;
+     
+}
+.vid-info p{
+    margin: 1px;
+    font-size: 15px;
+}
+
+@media (max-width: 900px){
+
+}
+
+.play-container{
+    padding-right: 40%;
+    
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+
+    
+}
+
+.playvideo{
+    flex-basis: 100%;
+    height: 1000px;
+   
+}
+
+
+
+/* main body end */
+
+
+
+
+
+
+
+
+h3,
+h4,
+.font-weight-semi-bold {
+    font-weight: 600 !important;
+}
+
+h5,
+h6,
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.btn {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 0;
+    z-index: 99;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-family: 'Oswald', sans-serif;
+    margin-right: 30px;
+    padding: 40px 0;
+    color: var(--light);
+    font-size: 17px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link  {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(34, 36, 41, .8);
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h4 {
+        font-size: 18px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.bg-hero {
+    background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(../img/carousel-1.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.programe::after {
+    position :absolute;
+    content: "";
+    width: 100%;
+    height: calc(100% - 45px);
+    top: 135px;
+    left: 0;
+    background: var(--dark);
+    z-index: -1;
+}
+
+.team-item img {
+    transition: .5s;
+}
+
+.team-item:hover img {
+    transform: scale(1.2);
+}
+
+.team-item .team-overlay {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    bottom: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(34, 36, 41, .9);
+    transition: .5s;
+    opacity: 0;
+}
+
+.team-item:hover .team-overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.testimonial-carousel .owl-nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next{
+    position: relative;
+    margin: 0 5px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--primary);
+    font-size: 22px;
+    border-radius: 45px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: var(--dark);
+}
+
+.testimonial-carousel .owl-item img {
+    width: 90px;
+    height: 90px;
+}
+
+.blog-item img {
+    transition: .5s;
+}
+
+.blog-item:hover img {
+    transform: scale(1.2);
+}
+
+@media (min-width: 991.98px) {
+    .credit {
+        background: var(--primary);
+    }
+}
+        </style>
+        
+    </head>
+
+    <body>
+<!-- Header Start -->
+<div class="container-fluid bg-dark px-0">
+    <div class="row gx-0">
+        <div class="col-lg-3 bg-dark d-none d-lg-block">
+            <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                <h1 class="m-0 display-4 text-primary text-uppercase">Power_Hub</h1>
+            </a>
+        </div>
+        <div class="col-lg-9">
+            <div class="row gx-0 bg-secondary d-none d-lg-flex">
+                <div class="col-lg-7 px-5 text-start">
+                    <div class="h-100 d-inline-flex align-items-center py-2 me-4">
+                        <i class="fa fa-envelope text-primary me-2"></i>
+                        <h6 class="mb-0">info@powerhub.com</h6>
+                    </div>
+                    <div class="h-100 d-inline-flex align-items-center py-2">
+                        <i class="fa fa-phone-alt text-primary me-2"></i>
+                        <h6 class="mb-0">+91 12345 67890</h6>
+                    </div>
+                </div>
+                <div class="col-lg-5 px-5 text-end">
+                    <div class="d-inline-flex align-items-center py-2">
+                        <a class="btn btn-light btn-square rounded-circle me-2" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-light btn-square rounded-circle me-2" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="btn btn-light btn-square rounded-circle me-2" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="btn btn-light btn-square rounded-circle me-2" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0 px-lg-5">
+                <a href="index.html" class="navbar-brand d-block d-lg-none">
+                    <h1 class="m-0 display-4 text-primary text-uppercase">PowerHub</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link">About</a>
+                        <a href="finalproducts.html" class="nav-item nav-link">Products</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Workouts</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="getlean.html" class="dropdown-item">Get Lean</a>
+                                <a href="getbulky.html" class="dropdown-item">Get Bulky</a>
+                            </div>
+                        </div>
+                        <a href="#" class="nav-item nav-link">Gym Finder</a>
+                        <a href="index.html" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                    <a href="signup.html" class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Register</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+   
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workout</title>
+    <link rel="stylesheet" href="workout.css">
+
+</head>
+<body>
+    
+   
+
+    <div class="list-container">
+        <div class="vid-list">
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3DYciheqisAtg&psig=AOvVaw1AGk1RFlAKGJ3vSywrDrxG&ust=1699071773314000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMCl6N39poIDFQAAAAAdAAAAABAE"><img src="https://i.ytimg.com/vi/YciheqisAtg/maxresdefault.jpg"class="thumbnail"></a>
+            <div class="flex-div">
+                <img src="https://yt3.ggpht.com/oBE_sjJh81R04-ug6xh9B7IgEIrYdBT8ODyJoeqWfUjVv777t1Bj8keCtsXQLsk-yUslMzYI=s176-c-k-c0x00ffffff-no-rj-mo">
+                <div class="vid-info">
+                   <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3DSMhKHa2oFa4&psig=AOvVaw2lF-sTBdXJiTEHxOmj5e88&ust=1698515418483000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODCqe_kloIDFQAAAAAdAAAAABAQ">Best channel for daily workout</a>
+                    <p>Rowan Row</p>
+                    <p>1.95M subscribers</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="vid-list">
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3DrGDSM37AUj8&psig=AOvVaw2lF-sTBdXJiTEHxOmj5e88&ust=1698515418483000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODCqe_kloIDFQAAAAAdAAAAABAX"><img src="https://i.ytimg.com/vi/rGDSM37AUj8/maxresdefault.jpg"class="thumbnail"></a>
+            <div class="flex-div">
+                <img src="https://yt3.ggpht.com/oBE_sjJh81R04-ug6xh9B7IgEIrYdBT8ODyJoeqWfUjVv777t1Bj8keCtsXQLsk-yUslMzYI=s176-c-k-c0x00ffffff-no-rj-mo">
+                <div class="vid-info">
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3DrGDSM37AUj8&psig=AOvVaw2lF-sTBdXJiTEHxOmj5e88&ust=1698515418483000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODCqe_kloIDFQAAAAAdAAAAABAX">Best channel for daily workout</a>
+                    <p>Rowan Row</p>
+                    <p>1.95M subscribers</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="vid-list">
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3DMyA_uF64cWg&psig=AOvVaw2lF-sTBdXJiTEHxOmj5e88&ust=1698515418483000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODCqe_kloIDFQAAAAAdAAAAABAf"><img src="https://i.ytimg.com/vi/MyA_uF64cWg/maxresdefault.jpg"class="thumbnail"></a>
+            <div class="flex-div">
+                <img src="https://yt3.ggpht.com/oBE_sjJh81R04-ug6xh9B7IgEIrYdBT8ODyJoeqWfUjVv777t1Bj8keCtsXQLsk-yUslMzYI=s176-c-k-c0x00ffffff-no-rj-mo">
+                <div class="vid-info">
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3DMyA_uF64cWg&psig=AOvVaw2lF-sTBdXJiTEHxOmj5e88&ust=1698515418483000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODCqe_kloIDFQAAAAAdAAAAABAf">Best channel for daily workout</a>
+                    <p>Rowan Row</p>
+                    <p>1.95M subscribers</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="vid-list">
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F265712446754711146%2F&psig=AOvVaw2lF-sTBdXJiTEHxOmj5e88&ust=1698515418483000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODCqe_kloIDFQAAAAAdAAAAABA3"><img src="https://i.pinimg.com/originals/2f/02/27/2f0227cb7248da78d43bb26edb242ba7.jpg"class="thumbnail"></a>
+            <div class="flex-div">
+                <img src="https://yt3.ggpht.com/oBE_sjJh81R04-ug6xh9B7IgEIrYdBT8ODyJoeqWfUjVv777t1Bj8keCtsXQLsk-yUslMzYI=s176-c-k-c0x00ffffff-no-rj-mo">
+                <div class="vid-info">
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F265712446754711146%2F&psig=AOvVaw2lF-sTBdXJiTEHxOmj5e88&ust=1698515418483000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODCqe_kloIDFQAAAAAdAAAAABA3">Best channel for daily workout</a>
+                    <p>Rowan Row</p>
+                    <p>1.95M subscribers</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="vid-list">
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3DmIyZ_-zh17Q&psig=AOvVaw0nQ2QTnTsUFI8DPyqubLHr&ust=1698516152523000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOjKq83nloIDFQAAAAAdAAAAABAZ"><img src="https://i.ytimg.com/vi/mIyZ_-zh17Q/maxresdefault.jpg"class="thumbnail"></a>
+            <div class="flex-div">
+                <img src="https://yt3.googleusercontent.com/ytc/APkrFKZ1t61Rnsa-PycOePP_YTUCKuFp_Tg3rOyCwUUD7Q=s176-c-k-c0x00ffffff-no-rj">
+                <div class="vid-info">
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3DmIyZ_-zh17Q&psig=AOvVaw0nQ2QTnTsUFI8DPyqubLHr&ust=1698516152523000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOjKq83nloIDFQAAAAAdAAAAABAZ">Best channel for daily workout</a>
+                    <p>growingannanas</p>
+                    <p>43 lakh subscribers</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="vid-list">
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3D_xwmEXDEUJQ&psig=AOvVaw0nQ2QTnTsUFI8DPyqubLHr&ust=1698516152523000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOjKq83nloIDFQAAAAAdAAAAABAx"><img src="https://i.ytimg.com/vi/_xwmEXDEUJQ/maxresdefault.jpg"class="thumbnail"></a>
+            <div class="flex-div">
+                <img src="https://yt3.googleusercontent.com/ytc/APkrFKZ1t61Rnsa-PycOePP_YTUCKuFp_Tg3rOyCwUUD7Q=s176-c-k-c0x00ffffff-no-rj">
+                <div class="vid-info">
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.youtube.com%2Fwatch%3Fv%3D_xwmEXDEUJQ&psig=AOvVaw0nQ2QTnTsUFI8DPyqubLHr&ust=1698516152523000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOjKq83nloIDFQAAAAAdAAAAABAx">Best channel for daily workout</a>
+                    <p>growingannanas</p>
+                    <p>43 lakh subscribers</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="vid-list">
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_3hoz1zATys&psig=AOvVaw0nQ2QTnTsUFI8DPyqubLHr&ust=1698516152523000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOjKq83nloIDFQAAAAAdAAAAABA5"><img src="https://i.ytimg.com/vi/_3hoz1zATys/maxresdefault.jpg"class="thumbnail"></a>
+            <div class="flex-div">
+                <img src="https://yt3.googleusercontent.com/ytc/APkrFKZ1t61Rnsa-PycOePP_YTUCKuFp_Tg3rOyCwUUD7Q=s176-c-k-c0x00ffffff-no-rj">
+                <div class="vid-info">
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D_3hoz1zATys&psig=AOvVaw0nQ2QTnTsUFI8DPyqubLHr&ust=1698516152523000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOjKq83nloIDFQAAAAAdAAAAABA5">Best channel for daily workout</a>
+                    <p>growingannanas</p>
+                    <p>43 lakh subscribers</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="vid-list">
+            <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DWtT3aH74Pwk&psig=AOvVaw3UZdMezQ4SS5hyeB_M3cBQ&ust=1698934933108000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKjay9b_ooIDFQAAAAAdAAAAABAh"><img src="https://i.ytimg.com/vi/WtT3aH74Pwk/maxresdefault.jpg"class="thumbnail"></a>
+            <div class="flex-div">
+                <img src="https://yt3.googleusercontent.com/ytc/APkrFKZ1t61Rnsa-PycOePP_YTUCKuFp_Tg3rOyCwUUD7Q=s176-c-k-c0x00ffffff-no-rj">
+                <div class="vid-info">
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DWtT3aH74Pwk&psig=AOvVaw3UZdMezQ4SS5hyeB_M3cBQ&ust=1698934933108000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKjay9b_ooIDFQAAAAAdAAAAABAh">Best channel for daily workout</a>
+                    <p>growingannanas</p>
+                    <p>43 lakh subscribers</p>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+    
+    </div>
+
+
+   
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-secondary px-5 mt-5">
+        <div class="row gx-5">
+            <div class="col-lg-8 col-md-6">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                        <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-geo-alt text-primary me-2"></i>
+                            <p class="mb-0">Mumbai, Maharashtra</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-envelope-open text-primary me-2"></i>
+                            <p class="mb-0">info@powerhub.com</p>
+                        </div>
+                        <div class="d-flex mb-2">
+                            <i class="bi bi-telephone text-primary me-2"></i>
+                            <p class="mb-0">+91 12345 67890</p>
+                        </div>
+                        <div class="d-flex mt-4">
+                            <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-primary btn-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-primary btn-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <h4 class="text-uppercase text-light mb-4">Quick Links</h4>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-secondary mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                            <a class="text-secondary mb-2" href="#aboutstart"><i class="bi bi-arrow-right text-primary me-2"></i>About</a>
+                            <a class="text-secondary mb-2" href="getlean.html"><i class="bi bi-arrow-right text-primary me-2"></i>Workouts</a>
+                            <a class="text-secondary mb-2" href="finalproducts.html"><i class="bi bi-arrow-right text-primary me-2"></i>Products</a>
+                            <a class="text-secondary" href="#contactnow"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-5">
+                    <h4 class="text-uppercase text-white mb-4">Subscribe for Newsletter</h4>
+                    <p class="text-light">Get Daily tips for making your body look better everyday!!</p>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                            <button class="btn btn-dark">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-4 py-lg-0 px-5" style="background: #111111;">
+        <div class="row gx-5">
+            <div class="col-lg-8">
+                <div class="py-lg-4 text-center">
+                    <p class="text-secondary mb-0">&copy; <a class="text-light fw-bold" href="#">PowerHub</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark py-3 fs-4 back-to-top"><i class="bi-arrow-90deg-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
