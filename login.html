@@ -138,28 +138,25 @@
 <!-- Header End -->
 
 <!--Form starts-->
-
 <div class="container">
-    <form>
-      <h1>Login</h1>
-      <p>Please fill out your credentials here...</p>
-      <hr />
-      <label>Email</label>
-      <input type="email" placeholder="Email" />
-      <br />
-      <label>Password</label>
-      <input type="password" placeholder="Password" />
-      <br />
-      <label>Re-password</label>
-      <input type="password" placeholder="Re-password" />
+    <form  form action="/login" method="POST">
+        <h1>Login</h1>
+        <p>Please fill out your credentials here...</p>
+        
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
 
-      <button class="registerbtn">Login</button>
-    
-      <div class="login">
-      <p>Don't have an account? <a href="signup.html">SignUp Here</a></p>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value="Login">
     </form>
-  </div>
+    
+    <div class="login">
+        <p>Don't have an account? <a href="signup.html">SignUp Here</a></p>
+    </div>
 </div>
+
    
 
    
@@ -242,6 +239,65 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>// Ensure the document is ready
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector('form'); // Login form
+            const usernameInput = document.getElementById('username');
+            const passwordInput = document.getElementById('password');
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message');
+            form.appendChild(messageDiv); // Adding a div to display messages
+        
+            // Handle form submission
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the default form submission
+        
+                // Clear previous messages
+                messageDiv.innerHTML = '';
+                
+                const username = usernameInput.value.trim();
+                const password = passwordInput.value.trim();
+        
+                // Simple validation
+                if (username === '' || password === '') {
+                    messageDiv.innerHTML = 'Please fill out all fields.';
+                    messageDiv.style.color = 'red';
+                    return;
+                }
+        
+                // Send AJAX request to the backend
+                fetch('http://localhost:3000/login', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        username: username,
+        password: password
+    })
+})
+
+
+                .then(response => {
+                    if (response.ok) {
+                        // If the login was successful, redirect the user to the dashboard
+                        window.location.href = '/index.html'; // Adjust the redirect URL based on your app
+                    } else {
+                        // If the login failed
+                        response.text().then(text => {
+                            messageDiv.innerHTML = text || 'Invalid credentials, please try again.';
+                            messageDiv.style.color = 'red';
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    messageDiv.innerHTML = 'An error occurred. Please try again later.';
+                    messageDiv.style.color = 'red';
+                });
+            });
+        });
+        </script>
     
 </body>
 </html>

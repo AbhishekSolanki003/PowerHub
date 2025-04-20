@@ -1,0 +1,30 @@
+{
+  "name": "powerhub",
+  "version": "1.0.0",
+  "description": "```\r PowerHub\r ├─ abhi.html\r ├─ azure-pipelines-1.yml\r ├─ azure-pipelines.yml\r ├─ contact.html\r ├─ css\r │  ├─ bootstrap.min.css\r │  └─ style.css\r ├─ finalproduct.css\r ├─ finalproducts.html\r ├─ getbulky.html\r ├─ getlean.html\r ├─ img\r │  ├─ about.jpg\r │  ├─ bcaa.jpg\r │  ├─ blog-1.jpg\r │  ├─ blog-2.jpg\r │  ├─ blog-3.jpg\r │  ├─ carousel-1.jpg\r │  ├─ carousel-2.jpg\r │  ├─ creatine.jpg\r │  ├─ energybar.jpg\r │  ├─ favicontry.PNG\r │  ├─ lander1.jpg\r │  ├─ massgainer.jpg\r │  ├─ multivitamin.jpg\r │  ├─ omega.jpg\r │  ├─ peanutbutter.jpg\r │  ├─ protein.jpg\r │  ├─ review_no_dp.png\r │  ├─ team-1.jpg\r │  ├─ team-2.jpg\r │  ├─ team-3.jpg\r │  ├─ testimonial-1.jpg\r │  ├─ testimonial-2.jpg\r │  ├─ testimonial.jpg\r │  └─ user.jpg\r ├─ index.html\r ├─ js\r │  └─ main.js\r ├─ lib\r │  ├─ counterup\r │  │  └─ counterup.min.js\r │  ├─ easing\r │  │  ├─ easing.js\r │  │  └─ easing.min.js\r │  ├─ flaticon\r │  │  ├─ backup.txt\r │  │  └─ font\r │  │     ├─ flaticon.css\r │  │     ├─ Flaticon.eot\r │  │     ├─ flaticon.html\r │  │     ├─ Flaticon.svg\r │  │     ├─ Flaticon.ttf\r │  │     ├─ Flaticon.woff\r │  │     ├─ Flaticon.woff2\r │  │     └─ _flaticon.scss\r │  ├─ owlcarousel\r │  │  ├─ assets\r │  │  │  ├─ ajax-loader.gif\r │  │  │  ├─ owl.carousel.css\r │  │  │  ├─ owl.carousel.min.css\r │  │  │  ├─ owl.theme.default.css\r │  │  │  ├─ owl.theme.default.min.css\r │  │  │  ├─ owl.theme.green.css\r │  │  │  ├─ owl.theme.green.min.css\r │  │  │  └─ owl.video.play.png\r │  │  ├─ owl.carousel.js\r │  │  └─ owl.carousel.min.js\r │  └─ waypoints\r │     ├─ links.php\r │     └─ waypoints.min.js\r ├─ login.html\r ├─ README.md\r ├─ scss\r │  ├─ bootstrap\r │  │  └─ scss\r │  │     ├─ bootstrap-grid.scss\r │  │     ├─ bootstrap-reboot.scss\r │  │     ├─ bootstrap-utilities.scss\r │  │     ├─ bootstrap.scss\r │  │     ├─ forms\r │  │     │  ├─ _floating-labels.scss\r │  │     │  ├─ _form-check.scss\r │  │     │  ├─ _form-control.scss\r │  │     │  ├─ _form-range.scss\r │  │     │  ├─ _form-select.scss\r │  │     │  ├─ _form-text.scss\r │  │     │  ├─ _input-group.scss\r │  │     │  ├─ _labels.scss\r │  │     │  └─ _validation.scss\r │  │     ├─ helpers\r │  │     │  ├─ _clearfix.scss\r │  │     │  ├─ _colored-links.scss\r │  │     │  ├─ _position.scss\r │  │     │  ├─ _ratio.scss\r │  │     │  ├─ _stretched-link.scss\r │  │     │  ├─ _text-truncation.scss\r │  │     │  └─ _visually-hidden.scss\r │  │     ├─ mixins\r │  │     │  ├─ _alert.scss\r │  │     │  ├─ _border-radius.scss\r │  │     │  ├─ _box-shadow.scss\r │  │     │  ├─ _breakpoints.scss\r │  │     │  ├─ _buttons.scss\r │  │     │  ├─ _caret.scss\r │  │     │  ├─ _clearfix.scss\r │  │     │  ├─ _color-scheme.scss\r │  │     │  ├─ _container.scss\r │  │     │  ├─ _deprecate.scss\r │  │     │  ├─ _forms.scss\r │  │     │  ├─ _gradients.scss\r │  │     │  ├─ _grid.scss\r │  │     │  ├─ _image.scss\r │  │     │  ├─ _list-group.scss\r │  │     │  ├─ _lists.scss\r │  │     │  ├─ _pagination.scss\r │  │     │  ├─ _reset-text.scss\r │  │     │  ├─ _resize.scss\r │  │     │  ├─ _table-variants.scss\r │  │     │  ├─ _text-truncate.scss\r │  │     │  ├─ _transition.scss\r │  │     │  ├─ _utilities.scss\r │  │     │  └─ _visually-hidden.scss\r │  │     ├─ utilities\r │  │     │  └─ _api.scss\r │  │     ├─ vendor\r │  │     │  └─ _rfs.scss\r │  │     ├─ _accordion.scss\r │  │     ├─ _alert.scss\r │  │     ├─ _badge.scss\r │  │     ├─ _breadcrumb.scss\r │  │     ├─ _button-group.scss\r │  │     ├─ _buttons.scss\r │  │     ├─ _card.scss\r │  │     ├─ _carousel.scss\r │  │     ├─ _close.scss\r │  │     ├─ _containers.scss\r │  │     ├─ _dropdown.scss\r │  │     ├─ _forms.scss\r │  │     ├─ _functions.scss\r │  │     ├─ _grid.scss\r │  │     ├─ _helpers.scss\r │  │     ├─ _images.scss\r │  │     ├─ _list-group.scss\r │  │     ├─ _mixins.scss\r │  │     ├─ _modal.scss\r │  │     ├─ _nav.scss\r │  │     ├─ _navbar.scss\r │  │     ├─ _offcanvas.scss\r │  │     ├─ _pagination.scss\r │  │     ├─ _popover.scss\r │  │     ├─ _progress.scss\r │  │     ├─ _reboot.scss\r │  │     ├─ _root.scss\r │  │     ├─ _spinners.scss\r │  │     ├─ _tables.scss\r │  │     ├─ _toasts.scss\r │  │     ├─ _tooltip.scss\r │  │     ├─ _transitions.scss\r │  │     ├─ _type.scss\r │  │     ├─ _utilities.scss\r │  │     └─ _variables.scss\r │  └─ bootstrap.scss\r └─ signup.html",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhishekSolanki003/PowerHub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbhishekSolanki003/PowerHub/issues"
+  },
+  "homepage": "https://github.com/AbhishekSolanki003/PowerHub#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "sqlite3": "^5.1.7"
+  }
+}
